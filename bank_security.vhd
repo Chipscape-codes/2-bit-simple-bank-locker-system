@@ -13,7 +13,7 @@ entity SimpleBankLocker is
     );
 end SimpleBankLocker;
 
-architecture Behavioral of SimpleBankLocker is
+architecture Behav of SimpleBankLocker is
     signal stored_code : STD_LOGIC_VECTOR(1 downto 0) := "10"; -- Example code (2-bit)
     signal locker_state : STD_LOGIC := '0';                   -- '0' = Locked, '1' = Unlocked
 begin
@@ -38,4 +38,4 @@ begin
         end if;
     end process;
 
-end Behavioral;
+end Behav;
